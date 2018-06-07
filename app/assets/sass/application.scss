@@ -12,9 +12,7 @@ $path: "/public/images/";
 @import 'prism';
 @import 'example';
 @import 'status-label';
-
-// Design examples
-@import '../../views/design-examples/tabs/tabs.scss';
+@import 'code-tabs';
 
 iframe {
   border: 0;
@@ -23,7 +21,11 @@ iframe {
 }
 
 pre {
+  margin: 0;
   height: 400px;
+}
+pre[class*='language-'] {
+  margin: 0;
 }
 
 .logo-sketch {

@@ -4,9 +4,9 @@
 
 // Declare some variables
 
-var $container = '.tabs'
-var $tablist = '.tabs-list'
-var $tabpanel = '.tabs-panel'
+var $container = '.code-tabs'
+var $tablist = '.code-tabs-list'
+var $tabpanel = '.code-tabs-panel'
 
 // The setup
 
