@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Tabs</title>
+    <title>{{content.h1}} | DWP Design Examples</title>
 
     <!--[if gt IE 8]><!--><link href="{{ asset_path }}stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="{{ asset_path }}stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="{{ asset_path }}/stylesheets/application.css">
     <style>
-      {% include './_tabs.css' %}
+      {% include './design-examples/' + example + '/' + example + '.css' %}
     </style>
   </head>
 
@@ -39,7 +39,7 @@
     <main>
       <div class="grid-row">
         <div class="column-full">
-          {% include './tabs.html' %}
+          {% include './design-examples/' + example + '/' + example + '.html' %}
         </div>
       </div>
     </main>
@@ -47,7 +47,7 @@
     <script src="{{ asset_path }}javascripts/govuk-template.js?0.22.3"></script>
     <script src="/public/javascripts/jquery-1.11.3.js"></script>
     <script>
-      {% include './tabs.js' %}
+      {% include './design-examples/' + example + '/' + example + '.js' %}
     </script>
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
