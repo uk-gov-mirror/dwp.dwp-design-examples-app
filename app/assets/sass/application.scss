@@ -1,0 +1,36 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/check-your-answers';
+@import 'patterns/task-list';
+@import 'prism';
+@import 'example';
+@import 'status-label';
+
+// Design examples
+@import '../../views/design-examples/tabs/tabs.scss';
+
+iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+pre {
+  height: 400px;
+}
+
+.logo-sketch {
+  background-image: url('/public/images/logo-sketch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 40px;
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

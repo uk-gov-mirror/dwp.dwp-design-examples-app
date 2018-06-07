@@ -1,0 +1,39 @@
+.status-label {
+  background-color: $grey-1;
+  color: $white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.status-label--primary {
+  background-color: $govuk-blue;
+}
+
+.status-label--danger {
+  background-color: $mellow-red;
+}
+
+.status-label--warning {
+  background-color: $brown;
+}
+
+.status-label--success {
+  background-color: $grass-green;
+}
+
+.status-label--margin {
+  margin-bottom: 3em 0;
+}
+
+.status-label--margin-top {
+  margin-top: 3em;
+}
+
+.status-label--margin-bottom {
+  margin-bottom: 3em;
+}
