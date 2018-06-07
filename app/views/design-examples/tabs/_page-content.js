@@ -1,7 +1,9 @@
 module.exports = {
   h1: "Tabs",
   status: "EXPERIMENTAL",
-  description: "Accessible tabs that show and hide related content.",
+  description: `
+    Accessible tabs that show and hide related content.
+  `,
   whenToUse: `
     <p>
       Tabs don't test well on citizen facing services, so are usually reserved 
@@ -24,7 +26,6 @@ module.exports = {
     <ul class="list list-bullet">
       <li>User type: Agents</li>
       <li>Accessibility: Tested on JAWS, Dragon, Zoomtext and Read&Write</li>
-      <li>Previous versions: link to github or google doc or something</li>
     </ul>
   `,
   servicesUsing: `
