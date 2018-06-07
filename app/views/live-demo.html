@@ -29,7 +29,9 @@
 
     <link rel="stylesheet" href="{{ asset_path }}/stylesheets/application.css">
     <style>
-      {% include './design-examples/' + example + '/' + example + '.css' %}
+      {% if code.CSS %}
+        {% include './design-examples/' + example + '/styles.css' %}
+      {% endif %}
     </style>
   </head>
 
@@ -39,7 +41,9 @@
     <main>
       <div class="grid-row">
         <div class="column-full">
-          {% include './design-examples/' + example + '/' + example + '.html' %}
+          {% if code.HTML %}
+            {% include './design-examples/' + example + '/index.html' %}
+          {% endif %}
         </div>
       </div>
     </main>
@@ -47,7 +51,9 @@
     <script src="{{ asset_path }}javascripts/govuk-template.js?0.22.3"></script>
     <script src="/public/javascripts/jquery-1.11.3.js"></script>
     <script>
-      {% include './design-examples/' + example + '/' + example + '.js' %}
+      {% if code.JS %}
+        {% include './design-examples/' + example + '/scripts.js' %}
+      {% endif %}
     </script>
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
