@@ -14,6 +14,9 @@ $path: "/public/images/";
 @import 'status-label';
 @import 'code-tabs';
 
+body {
+  min-height: 300px;
+}
 iframe {
   border: 0;
   height: 100%;
