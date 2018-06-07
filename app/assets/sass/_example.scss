@@ -9,9 +9,10 @@
 
 .example {
   border: 1px solid $border-colour;
+  height: 300px;
   margin-bottom: 15px;
   margin-top: 15px;
-  overflow: hidden;
+  overflow-y: scroll;
   position: relative;
   resize: both;
 }
