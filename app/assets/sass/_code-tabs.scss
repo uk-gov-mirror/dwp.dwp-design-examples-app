@@ -4,8 +4,7 @@
 @import 'elements/helpers';
 
 .code-tabs {
-  margin-bottom: 1.05263em;
-  margin-top: 1.05263em;
+  margin-bottom: 1.05263em; // 20px
 }
 
 // Tab content
@@ -28,7 +27,8 @@
   border: 1px solid $border-colour;
   border-top: 0;
   &:focus {
-    outline: 0;
+    border: 0;
+    outline: 5px solid $focus-colour;
   }
 }
 
@@ -45,18 +45,19 @@
     @include core-19;
     border-bottom: 1px solid $grey-2;
     margin: 0;
-
     @include media(tablet) {
       border-bottom: 0 none;
       float: left;
       margin: 0 0 -1px;
       padding: 0;
     }
-
+    
     a {
-      background-color: $white;
+      background-color: $panel-colour;
       display: block;
+      font-weight: bold;
       padding: em(9);
+      text-decoration: none;
 
       @include media(tablet) {
         border: 0 none;
@@ -81,11 +82,6 @@
         margin-top: 0;
         padding: em(13) em(18) em(14);
       }
-    }
-
-    // Inactive tabs
-    [aria-selected='false']:hover {
-      background-color: $highlight-colour;
     }
   }
 }
