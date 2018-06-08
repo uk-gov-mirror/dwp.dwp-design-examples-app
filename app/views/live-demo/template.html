@@ -1,61 +1,24 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lte-ie8" lang="{{ html_lang|default('en') }}"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <title>{{content.h1}} | DWP Design Examples</title>
-
-    <!--[if gt IE 8]><!--><link href="{{ asset_path }}stylesheets/govuk-template.css?0.22.3" media="screen" rel="stylesheet" /><!--<![endif]-->
-    <!--[if IE 6]><link href="{{ asset_path }}stylesheets/govuk-template-ie6.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
-    <!--[if IE 7]><link href="{{ asset_path }}stylesheets/govuk-template-ie7.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
-    <!--[if IE 8]><link href="{{ asset_path }}stylesheets/govuk-template-ie8.css?0.22.3" media="screen" rel="stylesheet" /><![endif]-->
-    <link href="{{ asset_path }}stylesheets/govuk-template-print.css?0.22.3" media="print" rel="stylesheet" />
-
-    <!--[if IE 8]><link href="{{ asset_path }}stylesheets/fonts-ie8.css?0.22.3" media="all" rel="stylesheet" /><![endif]-->
-    <!--[if gte IE 9]><!--><link href="{{ asset_path }}stylesheets/fonts.css?0.22.3" media="all" rel="stylesheet" /><!--<![endif]-->
-    <!--[if lt IE 9]><script src="{{ asset_path }}javascripts/ie.js?0.22.3"></script><![endif]-->
-
-    <link rel="shortcut icon" href="{{ asset_path }}images/favicon.ico?0.22.3" type="image/x-icon" />
-    
-    <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.22.3" color="#0b0c0c">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset_path }}images/apple-touch-icon-180x180.png?0.22.3">
-    <link rel="apple-touch-icon" sizes="167x167" href="{{ asset_path }}images/apple-touch-icon-167x167.png?0.22.3">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset_path }}images/apple-touch-icon-152x152.png?0.22.3">
-    <link rel="apple-touch-icon" href="{{ asset_path }}images/apple-touch-icon.png?0.22.3">
-
-    <meta name="theme-color" content="#0b0c0c" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="{{ asset_path }}images/opengraph-image.png?0.22.3">
-
-    <link rel="stylesheet" href="{{ asset_path }}/stylesheets/application.css">
-    <style>
-      {% if code.CSS %}
-        {% include '../design-examples/' + example + '/styles.css' %}
-      {% endif %}
-    </style>
+  <head>    
+    {% include './partials/_page-title.html' %}
+    {% include './partials/_govuk-head.html' %}
+    {% include './partials/_example-styles.html' %}
   </head>
 
   <body style="padding:10px;">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
-    <main>
+	  <main id="content" role="main">
       <div class="grid-row">
         <div class="column-full">
-          {% if code.HTML %}
-            {% include '../design-examples/' + example + '/index.html' %}
-          {% endif %}
+          {% include './partials/_example-markup.html' %}
         </div>
       </div>
     </main>
 
-    <script src="{{ asset_path }}javascripts/govuk-template.js?0.22.3"></script>
-    <script src="/public/javascripts/jquery-1.11.3.js"></script>
-    <script>
-      {% if code.JS %}
-        {% include '../design-examples/' + example + '/scripts.js' %}
-      {% endif %}
-    </script>
-
-    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+    {% include './partials/_govuk-scripts.html' %}
+    {% include './partials/_example-scripts.html' %}
   </body>
 </html>
