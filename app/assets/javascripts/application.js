@@ -19,4 +19,32 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+  initViewPortButtons()
 })
+
+function initViewPortButtons() {
+  $(document).on('click', '.vp-resize', function (e) {
+    e.preventDefault()
+    var $this = $(this)
+    var viewPortSize = '960px'
+    if ($this.attr('id') === 'vp-resize-mobile') {
+      viewPortSize = '400px'
+    }
+    return $('#example').css('width', viewPortSize)
+  })
+  appendResizeButtons()
+}
+function appendResizeButtons() {
+  $('#example').after(`
+    <div class="viewport-buttons">
+      <a class="vp-resize" id="vp-resize-desktop" href="#">
+        <span class="visually-hidden">Resize example for </span>
+        Desktop
+      </a> | 
+      <a class="vp-resize" id="vp-resize-mobile" href="#">
+        <span class="visually-hidden">Resize example for </span>
+        Mobile
+      </a>
+    </div>
+  `)
+}
