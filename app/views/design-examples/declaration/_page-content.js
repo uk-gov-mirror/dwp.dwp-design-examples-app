@@ -24,5 +24,9 @@ module.exports = {
     <ul class="list list-bullet">
       <li>Check your State Pension</li>
     </ul>
-  `
+  `,
+  discussion: {
+    linkText: 'Discuss declarions on GitHub',
+    linkURL: 'https://github.com/dwp/design-examples/issues/11'
+  }
 }

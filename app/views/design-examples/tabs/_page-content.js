@@ -34,5 +34,9 @@ module.exports = {
       <li>Support for Check Your State Pension</li>
       <li>Access to Work Integrated System</li>
     </ul>
-  `
+  `,
+  discussion: {
+    linkText: 'Discuss tabs on GitHub',
+    linkURL: 'https://github.com/dwp/design-examples/issues/13'
+  }
 }
