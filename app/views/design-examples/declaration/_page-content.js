@@ -2,16 +2,30 @@ module.exports = {
   h1: 'Declaration',
   status: 'TRIED AND TESTED',
   description: `
-    A way to make sure users understand the terms before submitting an application.
+    <p>
+      A way to make sure users understand the terms before submitting an application.
+    </p>
   `,
   whenToUse: `
     <p>
-      To follow.
+      The declaration is the digital equivalent to signing a paper form. 
+      You should only use it when you have a rules in your policy that could 
+      affect your users legally. 
+    </p>
+    <p>
+      It should also be used if using your service could alter their quality of 
+      life. For example, if applying for a benefit might reduce other support 
+      they may be receiving.
     </p>
   `,
   whenNotToUse: `
     <p>
-      To follow.
+      You must not use the declaration if your content is not clear. Legal wording 
+      should be simplified to remove jargon.
+    </p>
+    <p>
+      Your declarion should be short and to the point. It should not be used as 
+      a catch all method to bypass good content design in the rest of your service.
     </p>
   `,
   research: `
