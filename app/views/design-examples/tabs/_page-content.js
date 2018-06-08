@@ -1,6 +1,7 @@
 module.exports = {
   h1: "Tabs",
-  status: "EXPERIMENTAL",
+  // status: 1 = experimental, 2 = tried and tested, 3 = recommended
+  status: 1,
   description: `
     <p>
       Accessible tabs that show and hide related content.

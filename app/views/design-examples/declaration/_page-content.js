@@ -1,6 +1,7 @@
 module.exports = {
   h1: 'Declaration',
-  status: 'TRIED AND TESTED',
+  // status: 1 = experimental, 2 = tried and tested, 3 = recommended
+  status: 2,
   description: `
     <p>
       A way to make sure users understand the terms before submitting an application.

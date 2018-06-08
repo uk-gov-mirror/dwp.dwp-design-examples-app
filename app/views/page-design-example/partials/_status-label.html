@@ -1,0 +1,11 @@
+{% if content.status === 3 %}
+  {% set class = 'recommended' %}
+{% elif content.status === 2 %}
+  {% set class = 'tried-and-tested' %}
+{% else %}
+  {% set class = 'experimental' %}
+{% endif %}
+
+<span class="status-label status-label--{{class}}" >
+  {{class}}
+</span>
