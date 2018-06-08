@@ -11,7 +11,7 @@
 				<a href="/" class="link-back">Back</a>
 				<h1 class="heading-large">
 					{{content.h1}}<br />
-					<span class="status-label status-label--primary" >Experimental</span>
+					<span class="status-label status-label--primary" >{{content.status}}</span>
 				</h1>
 				
 				<p>
@@ -21,6 +21,7 @@
 
 			<div class="column-full">
 				<div class="example">
+					<a class="open-live-demo" href="/live-demo/{{example}}">Open live demo</a>
 					<iframe src="/live-demo/{{example}}"></iframe>
 				</div>
 			</div>
