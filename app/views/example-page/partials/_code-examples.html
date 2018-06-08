@@ -1,0 +1,100 @@
+<div class="code-tabs">
+  <div class="code-tabs-nav">
+    <ul class="code-tabs-list">
+      {% if code.HTML %}
+        <li>
+          <a href="#tab-1">
+            HTML
+          </a>
+        </li>
+      {% endif %}
+      {% if code.CSS %}
+        <li>
+          <a href="#tab-2">
+            CSS
+          </a>
+        </li>
+      {% endif %}
+      {% if code.SASS %}
+        <li>
+          <a href="#tab-3">
+            Sass
+          </a>
+        </li>
+      {% endif %}
+      {% if code.JS %}
+        <li>
+          <a href="#tab-4">
+            Javascript
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+
+  {% if code.HTML %}
+    <div class="code-tabs-content">
+      <div class="code-tabs-panel" id="tab-1">
+        <div class="code-tabs-panel-inner">
+          <h2 class="js-hidden heading-medium">
+            HTML
+          </h2>
+          
+          <pre>
+            <code class="language-html">
+{{ code.HTML | escape }}
+            </code>
+          </pre>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if code.CSS %}
+      <div class="code-tabs-panel" id="tab-2">
+        <div class="code-tabs-panel-inner">
+          <h2 class="js-hidden heading-medium">
+            CSS
+          </h2>
+          
+          <pre>
+            <code class="language-css">
+{{ code.CSS | escape }}
+            </code>
+          </pre>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if code.SASS %}
+      <div class="code-tabs-panel" id="tab-3">
+        <div class="code-tabs-panel-inner">
+          <h2 class="js-hidden heading-medium">
+            Sass
+          </h2>
+          
+          <pre>
+            <code class="language-css">
+{{ code.SASS | escape }}
+            </code>
+          </pre>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if code.JS %}
+      <div class="code-tabs-panel" id="tab-4">
+        <div class="code-tabs-panel-inner">
+          <h2 class="js-hidden heading-medium">
+            Sass
+          </h2>
+          
+          <pre>
+            <code class="language-javascript">
+{{ code.JS | escape }}
+            </code>
+          </pre>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
