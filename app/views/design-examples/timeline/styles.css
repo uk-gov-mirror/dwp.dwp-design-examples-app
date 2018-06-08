@@ -1,0 +1,19 @@
+.timeline .entry {
+  background-color: #005ea5;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 28px;
+  width: 10px;
+}
+
+.timeline li {
+  border-left: 3px solid #005ea5;
+  padding: 20px 0 20px 20px;
+  position: relative;
+}
+
+.timeline span {
+  color: #6f777b;
+  display: block;
+}
