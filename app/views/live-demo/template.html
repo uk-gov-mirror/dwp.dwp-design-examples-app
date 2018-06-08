@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{ asset_path }}/stylesheets/application.css">
     <style>
       {% if code.CSS %}
-        {% include './design-examples/' + example + '/styles.css' %}
+        {% include '../design-examples/' + example + '/styles.css' %}
       {% endif %}
     </style>
   </head>
@@ -42,7 +42,7 @@
       <div class="grid-row">
         <div class="column-full">
           {% if code.HTML %}
-            {% include './design-examples/' + example + '/index.html' %}
+            {% include '../design-examples/' + example + '/index.html' %}
           {% endif %}
         </div>
       </div>
@@ -52,7 +52,7 @@
     <script src="/public/javascripts/jquery-1.11.3.js"></script>
     <script>
       {% if code.JS %}
-        {% include './design-examples/' + example + '/scripts.js' %}
+        {% include '../design-examples/' + example + '/scripts.js' %}
       {% endif %}
     </script>
 
