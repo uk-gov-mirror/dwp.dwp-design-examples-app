@@ -1,23 +1,40 @@
 @import 'colours';
 
 .timeline {
-  .entry {
+  border-left: 3px solid $govuk-blue;
+}
+
+.timeline-entry {
+  margin: 2em 0;
+  padding-left: 1em;
+  position: relative;
+
+  &::before {
     background-color: $govuk-blue;
+    content: ' ';
     height: 3px;
     left: 0;
     position: absolute;
-    top: 28px;
+    top: .5em;
     width: 10px;
   }
 
-  li   {
-    border-left: 3px solid $govuk-blue;
-    padding: 20px 0 20px 20px;
-    position: relative;
+  .timeline-title {
+    display: block;
+    font-weight: 700;
   }
 
-  span {
+  .timeline-author,
+  .timeline-date {
     color: $secondary-text-colour;
+    display: block;
+  }
+
+  .timeline-info {
+    margin-top: 0;
+  }
+
+  .timeline-body {
     display: block;
   }
 }

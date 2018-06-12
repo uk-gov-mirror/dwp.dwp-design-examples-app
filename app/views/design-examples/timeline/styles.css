@@ -1,19 +1,38 @@
-.timeline .entry {
-  background-color: #005ea5;
-  height: 3px;
-  left: 0;
-  position: absolute;
-  top: 28px;
-  width: 10px;
+.timeline {
+  border-left: 3px solid #005ea5;
 }
 
-.timeline li {
-  border-left: 3px solid #005ea5;
-  padding: 20px 0 20px 20px;
+.timeline-entry {
+  margin: 2em 0;
+  padding-left: 1em;
   position: relative;
 }
 
-.timeline span {
+.timeline-entry::before {
+  background-color: #005ea5;
+  content: ' ';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: .5em;
+  width: 10px;
+}
+
+.timeline-title {
+  display: block;
+  font-weight: 700;
+}
+
+.timeline-author,
+.timeline-date {
   color: #6f777b;
+  display: block;
+}
+
+.timeline-info {
+  margin-top: 0;
+}
+
+.timeline-body {
   display: block;
 }
